@@ -1,42 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap");
 
-:root{
-  --cor-primaria: #17151E;
-  --cor-suporte: #5E5D65;
-  --cor-destanque: #FBD95A;
+:root {
+  --cor-primaria: #17151e;
+  --cor-suporte: #5e5d65;
+  --cor-destanque: #fbd95a;
 
-  --titulo: 'Poppins', sans-serif;
-  --corpo: 'Montserrat', sans-serif;
+  --titulo: "Poppins", sans-serif;
+  --corpo: "Montserrat", sans-serif;
 }
 
 /* Gerais */
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-ul{
+ul {
   list-style: none;
 }
 
-.titulo{
+.titulo {
   font-family: var(--titulo);
   font-size: 2rem;
   z-index: 1;
   position: relative;
 }
-.subtitulo{
+.subtitulo {
   font-size: 1.5rem;
   z-index: 1;
   position: relative;
 }
-.titulo::after,.subtitulo::after{
+.titulo::after,
+.subtitulo::after {
   content: "";
   height: 1rem;
   width: 8.25rem;
   background: var(--cor-destanque);
   display: block;
-  opacity: .5;
+  opacity: 0.5;
   position: absolute;
   bottom: 0.313rem;
   left: -0.313rem;
@@ -45,16 +46,16 @@ ul{
   border-radius: 0.313rem;
   margin: 0 auto;
 }
-.subtitulo::after{
-  width: 5.25rem !important; 
+.subtitulo::after {
+  width: 5.25rem !important;
 }
-.btn{
+.btn {
   display: block;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   background: var(--cor-destanque);
   max-width: 250px;
   border-radius: 2rem;
-  color: #17151E;
+  color: #17151e;
   font-family: var(--corpo);
   color: var(--cor-primaria);
   font-weight: 700;
@@ -63,7 +64,7 @@ ul{
   text-decoration: none;
   transition: background 200ms ease-in;
 }
-.btn:hover{
+.btn:hover {
   background: #a58e3bfb;
 }
 /* Padrao para as divis de conteudo*/
@@ -72,29 +73,30 @@ ul{
   display: grid;
   gap: 1rem;
   grid-template-columns: auto;
+  overflow: hidden  ;
 }
-.lista-item li{
-  margin-bottom: .4rem;
+.lista-item li {
+  margin-bottom: 0.4rem;
 }
-.lista-item li::before{
+.lista-item li::before {
   content: "";
-  height: .8rem;
-  width: .8rem;
+  height: 0.8rem;
+  width: 0.8rem;
   background: var(--cor-destanque);
   display: inline-block;
-  opacity: .8;
+  opacity: 0.8;
   border-radius: 50%;
   margin: auto 1rem auto auto;
 }
 
 /* Estilos */
-.container{
+.container {
   padding: 0 1rem;
   max-width: 480px;
   margin: 0 auto;
   font-family: var(--corpo);
 }
-.intro{
+.intro {
   color: #fff;
   padding: 1rem;
   background-color: var(--cor-primaria);
@@ -103,23 +105,23 @@ ul{
   gap: 1rem;
   grid-template-columns: auto;
 }
-.img-bairro{
+.img-bairro {
   max-width: 350px;
   overflow: hidden;
   border-radius: 1.5rem;
   margin: 0 auto;
 }
-.link-havaianas{
+.link-havaianas {
   font-weight: bold;
   color: #b69728;
 }
-footer{
+footer {
   font-family: var(--titulo);
   padding: 1rem;
   background: var(--cor-primaria);
   color: #fff;
   text-align: center;
 }
-footer a{
+footer a {
   color: #fff;
 }
