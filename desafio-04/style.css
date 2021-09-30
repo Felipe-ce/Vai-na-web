@@ -15,16 +15,16 @@
   margin: 0;
   padding: 0;
 }
-label, input{
+.form-dados label, .form-dados input{
   display: block;
   width: 100%;
   font-family: var(--titulo);
 }
-label{
+.form-dados label{
   font-size: 1.5rem;
   margin-bottom: .2rem;
 }
-input{
+.form-dados input{
   width: 300px;
   margin-bottom: 1rem;
   padding: .2rem;
@@ -32,12 +32,13 @@ input{
   font-family: var(--corpo);
   border-radius: .2rem;
 }
-input:first-of-type{
+.form-dados input:first-of-type{
   margin-bottom: 2rem ;
 }
 
 .container{
-  height: 100vh;
+  padding: 80px 0;
+  height: 100%;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -63,8 +64,17 @@ input:first-of-type{
 .btn:hover{
   background: #a58e3bfb;
 }
-.tamanhoamisa input,
+
+.tamanhoamisa h2{
+  font-family: var(--titulo);
+  font-size: 1.25rem;
+}
 .tamanhoamisa label{
-  color: red;
-  display: inline-block;
+  font-family: var(--corpo);
+  font-size: 1.25rem;
+  padding: .5rem;
+}
+.tamanhoamisa > div{
+  display: flex;
+  align-items: center;
 }

@@ -16,19 +16,55 @@
       <!-- Desafio 02 -->
       <form action="#" method="post">
         <!-- desafio 03 ao 13 -->
-        <label for="nome">Nome</label>
-        <input type="text" form="nome" name="nome" required>
-
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
-
-        <label for="idade">idade</label>
-        <input type="number" name="idade" id="idade" required>
+        <div class="form-dados">
+          <label for="nome">Nome</label>
+          <input type="text" form="nome" name="nome" required>
+  
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+  
+          <label for="idade">idade</label>
+          <input type="number" name="idade" id="idade" required>
+        </div>
 
         <div class="tamanhoamisa">
           <h2>Tamanho da camisa</h2>
-  
-        
+          <div>
+            <input type="radio" id="P" name="tamanho-camisa" value="P" checked>
+            <label for="P">Pequena</label>
+          </div>
+          <div>
+            <input type="radio" id="M" name="tamanho-camisa" value="M">
+            <label for="M">Média</label>
+          </div>
+          <div>
+            <input type="radio" id="G" name="tamanho-camisa" value="G">
+            <label for="G">Grande</label>
+          </div>
+        </div>
+
+        <div class="tamanhoamisa">
+          <h2>Tamanho da camisa</h2>
+          <div>
+            <input type="checkbox" id="segunda" name="segunda" value="segunda" checked>
+            <label for="segunda">Segunda-feira</label>
+          </div>
+          <div>
+            <input type="checkbox" id="terca" name="terca" value="terca">
+            <label for="terca">Terça-feira</label>
+          </div>
+          <div>
+            <input type="checkbox" id="quarta" name="quarta" value="quarta">
+            <label for="quarta">Quarta-feira</label>
+          </div>
+          <div>
+            <input type="checkbox" id="quinta" name="quinta" value="quinta">
+            <label for="quinta">Quinta-feira</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sexta" name="sexta" value="sexta">
+            <label for="sexta">Sexta-feira</label>
+          </div>
 
         </div>
         
