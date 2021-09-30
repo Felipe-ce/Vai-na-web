@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+:root{
+  --cor-primaria: #17151E;
+  --cor-suporte: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  --cor-destanque: #FBD95A;
+
+  --titulo: 'Poppins', sans-serif;
+  --corpo: 'Montserrat', sans-serif;
+}
+
+/* Gerais */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+label, input{
+  display: block;
+  width: 100%;
+  font-family: var(--titulo);
+}
+label{
+  font-size: 1.5rem;
+  margin-bottom: .2rem;
+}
+input{
+  width: 300px;
+  margin-bottom: 1rem;
+  padding: .2rem;
+  font-size: 1rem;
+  font-family: var(--corpo);
+  border-radius: .2rem;
+}
+input:first-of-type{
+  margin-bottom: 2rem ;
+}
+
+.container{
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-image: var(--cor-suporte);
+}
+.btn{
+  border: none;
+  display: block;
+  padding: .5rem 1rem;
+  background: var(--cor-destanque);
+  max-width: 250px;
+  border-radius: .2rem;
+  color: #17151E;
+  font-family: var(--corpo);
+  font-size: 1.25rem;
+  color: var(--cor-primaria);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background 200ms ease-in-out;
+}
+.btn:hover{
+  background: #a58e3bfb;
+}
+.tamanhoamisa input,
+.tamanhoamisa label{
+  color: red;
+  display: inline-block;
+}
