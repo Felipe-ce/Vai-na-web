@@ -2,8 +2,11 @@
 
 
 :root{
-  --cor-principal: #6C63FF;
-  --cor-secundaria: #6b63ff70;
+  --cor-principal: #fda085;
+  --cor-secundaria: #e67454;
+  --cor-cinza-primaria: #272727;
+  --cor-cinza-secundaria: #e67454;
+
   --font-titulos: 'Roboto', sans-serif;
   --font-corpo: 'Source Sans Pro', sans-serif;
 }
@@ -24,9 +27,12 @@ a{
 body{
   font-family: var(--font-corpo);
 }
-
-body p{
+body p, dd{
   line-height: 1.4;
+  color: var(--cor-cinza-primaria);
+}
+ul{
+  list-style: none;
 }
 
 
@@ -75,6 +81,11 @@ body p{
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
 .btn:hover {
+  -moz-transform: translate(0px, -2px);
+-webkit-transform: translate(0px, -2px);
+-o-transform: translate(0px, -2px);
+-ms-transform: translate(0px, -2px);
+transform: translate(0px, -2px);
   box-shadow: 0 0 40px 40px #fda085 inset;
 }
 
@@ -215,4 +226,83 @@ body p{
 .intro-info > div{
   display: flex;
   gap: 1rem;
+}
+
+
+/* Section sobre */
+.info-content{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.info-content .btn{
+  display: block;
+  margin-top: 3rem;
+  max-width: 180px;
+}
+.info-content .titulo{
+  margin-bottom: 1rem;
+}
+.sobre{
+  grid-row: span 2;
+}
+.sobre p:first-of-type{
+  margin-bottom: 1rem;
+}
+
+/* faq */
+.faq dt{
+  font-family: var(--font-titulos);
+  margin-bottom: .25rem;
+  color: var(--cor-secundaria);
+  cursor: pointer;
+}
+.faq dt::after{
+  content: '\1431';
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  transform: rotate(180deg);
+}
+.faq dt.ativo::after{
+  transform: rotate(0);
+}
+.faq dd{
+  display: none;
+  margin: 0 0 .5rem 1rem;
+  max-height: 150px;
+}
+.faq dd.ativo{
+  display: block;
+}
+/* Contato */
+.contato ul{
+  font-weight: bold;
+}
+.contato ul li{
+  margin-bottom: .5rem;
+  transition: 100ms ease-in;
+}
+.contato ul li:hover{
+  transform: translate(0px, -2px);
+}
+
+
+.social h4{
+  font-size: 1.5rem;
+  color: #424242;
+  margin-bottom: 1rem;
+}
+.social ul{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.social img, .social a{
+  width: 40px;
 }
