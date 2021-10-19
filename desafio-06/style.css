@@ -291,8 +291,7 @@ transform: translate(0px, -2px);
 .contato ul li:hover{
   transform: translate(0px, -2px);
 }
-
-
+/* Redes sociais */
 .social h4{
   font-size: 1.5rem;
   color: #424242;
@@ -305,4 +304,120 @@ transform: translate(0px, -2px);
 }
 .social img, .social a{
   width: 40px;
+}
+
+
+/* Section para adoção */
+.dog{
+  /* background-image: linear-gradient(120deg, #f9f9f9 0%, #e2e2e2 100%); */
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  padding: 60px 10px;
+}
+.dog-content{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.dog-content >p{
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.porte-dog{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.porte-dog li{
+  font-size: 1.125rem;
+  padding: .5rem;
+  cursor: pointer;
+  font-family: var(--font-titulos);
+  transition: 100ms ease-in;
+  color: #535353;
+}
+.porte-dog li.ativo{
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
+.porte-dog li.ativo::before,.card-dog h4:before {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  background: #fda085;
+  display: block;
+
+  position: absolute;
+  bottom: 0.313rem;
+  left: -0.0rem;
+  right: auto;
+  z-index: -1;
+  border-radius: 0.313rem;
+  margin: 0 auto;
+}
+.porte-dog li:hover{
+  transform: translate(0px, -2px);
+}
+
+.content-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.card-dog{
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 100ms ease-in;
+}
+.card-dog:hover{
+  transform: translate(0px, -5px);
+}
+.card-dog h4{
+  position: relative;
+  font-size: 1.8rem;
+  z-index: 1;
+  font-family: var(--font-titulos);
+}
+.card-dog img{
+  max-width: 100%;
+  align-self: center;
+  overflow: hidden;
+}
+.dog-info{
+  padding: 1rem;
+  background-image: linear-gradient(120deg, #f3cd52 0%, #f58a6d 100%);
+  position: relative;
+    top: -4px;
+}
+.dog-info div{
+  padding: .5rem 0;
+  margin-bottom: .5rem;
+
+}
+.dog-info > div span{
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #313131;
+}
+.dog-info > div span::before{
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  margin-right: .5rem;
+}
+.dog-info > div span + span{
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.dog-info a{
+  overflow: hidden;
+}
+.card-dog .btn{
+  border:none;
+  background: #fda085;
+  text-transform: capitalize;
 }
